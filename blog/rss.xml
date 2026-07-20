@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The Easier Now blog</title>
+    <link>https://website.easiernow.co/blog/</link>
+    <atom:link href="https://website.easiernow.co/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Writing on getting work done without holding it all in your head.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 20 Jul 2026 09:24:50 GMT</lastBuildDate>
+    <item>
+      <title>Time estimates are a skill, not a personality trait</title>
+      <link>https://website.easiernow.co/blog/time-estimates-are-a-skill/</link>
+      <guid isPermaLink="true">https://website.easiernow.co/blog/time-estimates-are-a-skill/</guid>
+      <description>People who are bad at guessing how long work takes usually think they were born that way. It is a skill with a feedback loop, and most people have never closed the loop.</description>
+      <category>Productivity</category>
+      <dc:creator>Anthony Stratton</dc:creator>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Why delegation fails when the process only exists in your head</title>
+      <link>https://website.easiernow.co/blog/delegation-fails-when-the-process-is-in-your-head/</link>
+      <guid isPermaLink="true">https://website.easiernow.co/blog/delegation-fails-when-the-process-is-in-your-head/</guid>
+      <description>Handing work over rarely fails because the person is wrong. It fails because the instructions were never written down, and nobody can read your mind well enough to fill the gaps.</description>
+      <category>Delegation</category>
+      <dc:creator>Anthony Stratton</dc:creator>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What stoicism gets right about the next action</title>
+      <link>https://website.easiernow.co/blog/stoicism-and-the-next-action/</link>
+      <guid isPermaLink="true">https://website.easiernow.co/blog/stoicism-and-the-next-action/</guid>
+      <description>The Stoics split the world into what you control and what you do not. Applied to a working day, that line falls in a more useful place than most people expect.</description>
+      <category>Mindset</category>
+      <dc:creator>Anthony Stratton</dc:creator>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
