@@ -1,0 +1,41 @@
+# Sveltia CMS configuration.
+# Repo paths are from the repo root; the Astro site lives in website/.
+#
+# AUTH: GitHub-hosted static sites have no server, so editing needs a small OAuth
+# relay. Deploy sveltia-cms-auth on Cloudflare Workers (free) and register a
+# GitHub OAuth app, then set base_url below. See website/SVELTIA-SETUP.md.
+
+backend:
+  name: github
+  repo: easiermarketing/easier-now
+  branch: mvp-website
+  base_url: https://YOUR-SVELTIA-AUTH.workers.dev   # set after deploying the worker
+
+# Where uploaded images land, and how they are referenced on the built site.
+media_folder: website/public/img/uploads
+public_folder: /img/uploads
+
+# Only fully-mapped collections are enabled. A collection whose config omits a
+# frontmatter field will DROP that field on save, so nothing is enabled until
+# every field is mapped. See SVELTIA-SETUP.md for the queue.
+collections:
+  - name: posts
+    label: Blog posts
+    label_singular: Blog post
+    folder: website/src/content/posts
+    extension: mdx
+    format: frontmatter
+    create: true
+    slug: '{{slug}}'
+    summary: '{{title}}'
+    sortable_fields: [publishDate, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Card and meta description, widget: text }
+      - { name: pillar, label: Pillar, widget: string, default: 'Calm productivity' }
+      - { name: publishDate, label: Publish date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true }
+      - { name: updatedDate, label: Updated date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, picker_utc: true, required: false }
+      - { name: author, label: Author, widget: string, default: 'Anthony Stratton' }
+      - { name: draft, label: Draft (hidden from the site while on), widget: boolean, default: true }
+      - { name: ctaHref, label: CTA link, widget: string, default: '/pricing/' }
+      - { name: body, label: Body, widget: markdown }
