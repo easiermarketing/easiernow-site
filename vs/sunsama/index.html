@@ -28,4 +28,40 @@ Export a CSV and drop it in. You do not have to match a template, because
 The cookies that keep you signed in are always on. Cookies that measure how the
         site is used are off until you say yes. You can change this later from the
         footer. <a href="/privacy#cookies" data-astro-cid-garwan2p>Read the policy</a>.
-</p> </div> <div class="consent__actions" data-astro-cid-garwan2p> <button class="btn btn--ghost btn--md consent__btn" type="button" data-consent-decline data-astro-cid-garwan2p> <span data-astro-cid-garwan2p>Decline</span> </button> <button class="btn btn--purple btn--md consent__btn" type="button" data-consent-accept data-astro-cid-garwan2p> <span data-astro-cid-garwan2p>Accept</span> </button> </div> </div> </div>  <script type="module" src="/_astro/CookieConsent.astro_astro_type_script_index_0_lang.kFc1h3Ve.js"></script>  <script type="module" src="/_astro/BaseLayout.astro_astro_type_script_index_0_lang.Cmglc03F.js"></script> </body> </html> 
+</p> </div> <div class="consent__actions" data-astro-cid-garwan2p> <button class="btn btn--ghost btn--md consent__btn" type="button" data-consent-decline data-astro-cid-garwan2p> <span data-astro-cid-garwan2p>Decline</span> </button> <button class="btn btn--purple btn--md consent__btn" type="button" data-consent-accept data-astro-cid-garwan2p> <span data-astro-cid-garwan2p>Accept</span> </button> </div> </div> </div>  <script type="module" src="/_astro/CookieConsent.astro_astro_type_script_index_0_lang.kFc1h3Ve.js"></script> <script>(function(){const tawkId = "673942d62480f5b4f59f24ba/1icrqq5ji";
+
+    (function () {
+      var loaded = false;
+
+      window.Tawk_API = window.Tawk_API || {};
+      /* Brand purple, matching --c-purple. The bubble sits above the sticky
+         CTA bar rather than on top of it. */
+      window.Tawk_API.customStyle = {
+        visibility: {
+          desktop: { position: 'br', xOffset: 24, yOffset: 96 },
+          mobile: { position: 'br', xOffset: 12, yOffset: 86 },
+        },
+      };
+
+      function load() {
+        if (loaded) return;
+        loaded = true;
+        window.Tawk_LoadStart = new Date();
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://embed.tawk.to/' + tawkId;
+        s.charset = 'UTF-8';
+        s.setAttribute('crossorigin', '*');
+        document.head.appendChild(s);
+      }
+
+      ['pointerdown', 'keydown', 'touchstart'].forEach(function (e) {
+        window.addEventListener(e, load, { once: true, passive: true });
+      });
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(load, { timeout: 5000 });
+      } else {
+        setTimeout(load, 5000);
+      }
+    })();
+  })();</script> <script type="module" src="/_astro/BaseLayout.astro_astro_type_script_index_0_lang.Cmglc03F.js"></script> </body> </html> 
