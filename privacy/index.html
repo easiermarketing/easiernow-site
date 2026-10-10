@@ -150,6 +150,29 @@ The cookies that keep you signed in are always on. Cookies that measure how the
         },
       };
 
+      /* No eyecatchers. The property has the attention grabber and message
+         previews switched off, but tawk still paints an unread "1" on the
+         bubble for its own greeting. The widget iframes are same-origin
+         (about:blank), so a one-line style inside them removes the count. */
+      var HIDE = '.tawk-min-badge,.tawk-badge{display:none!important}';
+      function hideBadge() {
+        document.querySelectorAll('iframe[title="Chat widget"]').forEach(function (f) {
+          try {
+            var d = f.contentDocument;
+            if (d && d.head && !d.getElementById('en-nobadge')) {
+              var st = d.createElement('style');
+              st.id = 'en-nobadge';
+              st.textContent = HIDE;
+              d.head.appendChild(st);
+            }
+          } catch (e) {}
+        });
+      }
+      window.Tawk_API.onLoad = function () {
+        hideBadge();
+        new MutationObserver(hideBadge).observe(document.body, { childList: true, subtree: true });
+      };
+
       function load() {
         if (loaded) return;
         loaded = true;
