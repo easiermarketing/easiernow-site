@@ -1,4 +1,30 @@
-<!DOCTYPE html><html lang="en" class="no-js"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Easier Now vs Akiflow · planning done for you, not by you</title><meta name="description" content="Akiflow gathers tasks from your tools and asks you to time-block them. Easier Now estimates each task, fits it into the hours you have left, and shows you one. An honest comparison."><link rel="canonical" href="https://easiernow.co/vs/akiflow/"><meta property="og:type" content="website"><meta property="og:title" content="Easier Now vs Akiflow · planning done for you, not by you"><meta property="og:description" content="Akiflow gathers tasks from your tools and asks you to time-block them. Easier Now estimates each task, fits it into the hours you have left, and shows you one. An honest comparison."><meta property="og:url" content="https://easiernow.co/vs/akiflow/"><meta property="og:site_name" content="Easier Now"><meta property="og:image" content="https://easiernow.co/og/easier-now-og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Easier Now. One task card with a green Done button, above the line: your whole to-do list, one task on screen at a time."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Easier Now vs Akiflow · planning done for you, not by you"><meta name="twitter:description" content="Akiflow gathers tasks from your tools and asks you to time-block them. Easier Now estimates each task, fits it into the hours you have left, and shows you one. An honest comparison."><meta name="twitter:image" content="https://easiernow.co/og/easier-now-og.jpg"><meta name="twitter:image:alt" content="Easier Now. One task card with a green Done button, above the line: your whole to-do list, one task on screen at a time."><meta name="theme-color" content="#6E46FF"><link rel="icon" href="/brand/logo-64.png" type="image/png" sizes="64x64"><link rel="apple-touch-icon" href="/brand/logo-circle.png"><link rel="sitemap" href="/sitemap-index.xml"><script>(function(){try{
+<!DOCTYPE html><html lang="en" class="no-js"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      // Way 2: the React app and this marketing site share one origin, so the
+      // Supabase session (localStorage `sb-<ref>-auth-token`) is readable here.
+      // A signed-in visitor who lands on the site ROOT skips straight into the
+      // app instead of seeing the marketing home. Runs before paint to avoid a
+      // flash of marketing. Scoped to `/` only — other marketing pages stay
+      // browsable while signed in.
+      // Carried over from dev commit 8d3189d (Jyotsna, 20 July 2026) so that
+      // replacing website/ on dev keeps it. On website.easiernow.co there is no
+      // app session on the origin, so this does nothing there.
+      (function () {
+        try {
+          var p = location.pathname;
+          if (p !== '/' && p !== '/home.html') return;
+          for (var i = 0; i < localStorage.length; i++) {
+            var k = localStorage.key(i);
+            if (!k || !/^sb-.*-auth-token$/.test(k)) continue;
+            var v = JSON.parse(localStorage.getItem(k) || 'null');
+            var exp = v && (v.expires_at || (v.currentSession && v.currentSession.expires_at));
+            if (v && exp && exp * 1000 > Date.now()) {
+              location.replace('/now');
+              return;
+            }
+          }
+        } catch (e) { /* no session readable → stay on marketing */ }
+      })();
+    </script><title>Easier Now vs Akiflow · planning done for you, not by you</title><meta name="description" content="Akiflow gathers tasks from your tools and asks you to time-block them. Easier Now estimates each task, fits it into the hours you have left, and shows you one. An honest comparison."><link rel="canonical" href="https://easiernow.co/vs/akiflow/"><meta property="og:type" content="website"><meta property="og:title" content="Easier Now vs Akiflow · planning done for you, not by you"><meta property="og:description" content="Akiflow gathers tasks from your tools and asks you to time-block them. Easier Now estimates each task, fits it into the hours you have left, and shows you one. An honest comparison."><meta property="og:url" content="https://easiernow.co/vs/akiflow/"><meta property="og:site_name" content="Easier Now"><meta property="og:image" content="https://easiernow.co/og/easier-now-og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Easier Now. One task card with a green Done button, above the line: your whole to-do list, one task on screen at a time."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Easier Now vs Akiflow · planning done for you, not by you"><meta name="twitter:description" content="Akiflow gathers tasks from your tools and asks you to time-block them. Easier Now estimates each task, fits it into the hours you have left, and shows you one. An honest comparison."><meta name="twitter:image" content="https://easiernow.co/og/easier-now-og.jpg"><meta name="twitter:image:alt" content="Easier Now. One task card with a green Done button, above the line: your whole to-do list, one task on screen at a time."><meta name="theme-color" content="#6E46FF"><link rel="icon" href="/brand/logo-64.png" type="image/png" sizes="64x64"><link rel="apple-touch-icon" href="/brand/logo-circle.png"><link rel="sitemap" href="/sitemap-index.xml"><script>(function(){try{
 var K=["a","b","c"];
 var S="en-hero-variant";
 var v=null;
