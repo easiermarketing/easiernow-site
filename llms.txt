@@ -1,0 +1,42 @@
+# Easier Now
+
+> Easier Now is a to-do list app that schedules your tasks into your working day and shows you 1 at a time, the most valuable first. 14 days free, no card.
+
+Easier Now plans the day around your fixed commitments (meetings, routines, anything tied to a time) and fits flexible tasks into the gaps that are left. Each task carries urgency, importance and pay grade, which decide its place in the queue. It connects to Google Calendar. After the 14-day free trial it costs $10.99 a month, or $8.25 a month when paid for the year.
+
+## Product
+
+- [Home](https://easiernow.co/): what Easier Now does and who it is for
+- [How it works](https://easiernow.co/how-it-works/): the daily flow from adding tasks to working through them
+- [Pricing](https://easiernow.co/pricing/): plans, the free trial and what one subscription replaces
+- [For founders](https://easiernow.co/founders/): how founders use it
+
+## Features
+
+- [Now](https://easiernow.co/features/now/): the 1 task to do right now
+- [Priority](https://easiernow.co/features/priority/): urgency, importance and pay grade
+- [Catch up](https://easiernow.co/features/catch-up/): bringing overdue work back 1 at a time
+- [Google Calendar](https://easiernow.co/features/google-calendar/): planning tasks around your meetings
+- [Notes](https://easiernow.co/features/notes/): notes kept with your tasks
+
+## Compared with other tools
+
+- [Compare](https://easiernow.co/compare/): Easier Now next to other planners and task apps
+- [vs Todoist](https://easiernow.co/vs/todoist/)
+- [vs Sunsama](https://easiernow.co/vs/sunsama/)
+- [vs Motion](https://easiernow.co/vs/motion/)
+- [vs Reclaim](https://easiernow.co/vs/reclaim/)
+- [vs Akiflow](https://easiernow.co/vs/akiflow/)
+- [vs Tiimo](https://easiernow.co/vs/tiimo/)
+
+## Company
+
+- [About](https://easiernow.co/about/): why it was built
+- [Contact](https://easiernow.co/contact/)
+- [Privacy](https://easiernow.co/privacy/)
+- [Terms](https://easiernow.co/terms/)
+
+## Optional
+
+- [Sitemap](https://easiernow.co/sitemap-index.xml)
+- [Start the free trial](https://easiernow.co/signup/)
